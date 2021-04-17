@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FaceApp</string>
+    <string name="start_message">Bem vindo ao FaceApp</string>
+    <string name="mensagem_login">Faça seu Login</string>
+    <string name="login">Login</string>
+    <string name="user_field">Usuário: </string>
+    <string name="user_input">Digite seu nome de usuário</string>
+    <string name="password_field">Senha: </string>
+    <string name="password_input">Digite sua senha</string>
+    <string name="login_button">Login</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_atualizar">Atualizar</string>
+    <string name="action_config">Configurações</string>
+    <string name="action_sair">Sair</string>
+    <string name="tela_inicial_text">Informações</string>
+    <string name="button_pedidos">Meus Pedidos</string>
+    <string name="button_pagamentos">Meus pagamentos</string>
+    <string name="button_desejos">Lista de desejos</string>
+
+
+</resources>
