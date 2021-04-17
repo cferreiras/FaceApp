@@ -1,5 +1,5 @@
 # AC02
-Aplicação mobile baseada na OPE em que desenvolvemos um aplicativo para uma confecção de roupas.
+Aplicação mobile baseada na OPE em que estamos desenvolvendo um software para uma confecção de roupas.
 </br>
 Feito em conjunto com os alunos:
 </br>
