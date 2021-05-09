@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio"
+            android:checked="true"/>
+
+        <item android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_perfil"
+            android:title="Meu Perfil" />
+
+        <item android:id="@+id/nav_meusPedidos"
+            android:title="Meus Pedidos"
+            android:icon="@drawable/ic_meuspedidos" />
+
+        <item android:id="@+id/nav_dadosPagamento"
+            android:title="Dados de Pagamento"
+            android:icon="@drawable/ic_pagamento2" />
+
+        <item android:id="@+id/nav_mensagens"
+            android:title="Mensagens"
+            android:icon="@drawable/ic_chat_black" />
+
+        <item android:id="@+id/nav_listaDesejos"
+            android:title="Lista de Desejos"
+            android:icon="@drawable/ic_listadesejos"/>
+
+        <item android:id="@+id/nav_localizacao"
+            android:title="Localização"
+            android:icon="@drawable/ic_mapa"/>
+
+        <item android:id="@+id/nav_config"
+            android:icon="@drawable/ic_configuracoes_black"
+            android:title="Configurações" />
+
+        <item android:id="@+id/nav_sair"
+            android:icon="@drawable/ic_sair"
+            android:title="Sair" />
+
+    </group>
+</menu>

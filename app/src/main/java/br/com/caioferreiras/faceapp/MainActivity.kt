@@ -2,6 +2,7 @@ package br.com.caioferreiras.faceapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.login.*
 
 class MainActivity : DebugActivity() {
@@ -13,6 +14,9 @@ class MainActivity : DebugActivity() {
 
         login_button.setOnClickListener {
             val textoUsuario = user_input.text.toString()
+            val textoSenha = password_input.text.toString()
+
+
 
             var intent = Intent(this, TelaInicialActivity::class.java)
 
@@ -25,7 +29,19 @@ class MainActivity : DebugActivity() {
             intent.putExtra("numero_double", 1.75)
             intent.putExtra("logico_2", false)
 
-            startActivity(intent)
-        }
+            if (textoUsuario == "aluno" && textoSenha == "impacta"){
+                user_input.text.clear()
+                password_input.text.clear()
+                startActivity(intent)
+            } else {
+                user_input.text.clear()
+                password_input.text.clear()
+                Toast.makeText(this, "Usuario Ou senha Invalidos", Toast.LENGTH_SHORT).show()
+                user_input.hasFocus()
+
+            }
+
+            }
+
     }
 }

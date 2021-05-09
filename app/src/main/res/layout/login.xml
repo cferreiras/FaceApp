@@ -18,6 +18,11 @@
         android:id="@+id/user_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:editable="false"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/user_field"
@@ -27,15 +32,24 @@
         android:id="@+id/user_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:defaultFocusHighlightEnabled="false"
         android:hint="@string/user_input" />
 
     <TextView
         android:id="@+id/password_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:editable="false"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Senha: "
+        android:text="@string/password_field"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <EditText

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutMenuLateral"
+    android:fitsSystemWindows="true"
+    >
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -24,27 +32,37 @@
         android:padding="20dp">
 
         <Button
-            android:id="@+id/button_pedidos"
+            android:id="@+id/button_nvpedido"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/button_pedidos"/>
+            android:text="@string/button_nvpedido"/>
 
         <Button
-            android:id="@+id/button_pagamento"
+            android:id="@+id/button_nvdesejo"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/button_pagamentos"/>
+            android:text="@string/button_nvdesejo"/>
 
         <Button
-            android:id="@+id/button_desejos"
+            android:id="@+id/button_novidades"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/button_desejos"/>
+            android:text="@string/button_novidades"/>
 
     </TableLayout>
 
 </LinearLayout>
-
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu_lateral"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_lateral_header"
+        app:menu="@menu/menu_lateral"
+        >
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

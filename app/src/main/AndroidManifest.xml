@@ -9,24 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FaceApp">
+        <activity android:name=".NavigationDrawerActivity"></activity>
+        <activity android:name=".DetalheNovidades" />
+
         <activity
-            android:name=".PagamentoActivity"
-            android:label="Meus Pagamentos" />
+            android:name=".NovidadesActivity"
+            android:label="Novidades"
+            android:theme="@style/Theme.Toolbar" />
+
         <activity
             android:name=".DesejosActivity"
-            android:label="Meus Desejos"/>
+            android:label="Meus Desejos"
+            android:theme="@style/Theme.Toolbar"/>
+
         <activity
             android:name=".PedidosActivity"
-            android:label="Meus Pedidos"/>
+            android:label="Meus Pedidos"
+            android:theme="@style/Theme.Toolbar"/>
+
         <activity android:name=".ConfiguracoesActivity" />
+
         <activity
             android:name=".TelaInicialActivity"
             android:theme="@style/Theme.Toolbar" />
+
         <activity android:name=".DebugActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

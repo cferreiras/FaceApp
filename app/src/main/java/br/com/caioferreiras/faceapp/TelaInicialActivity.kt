@@ -2,13 +2,18 @@ package br.com.caioferreiras.faceapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_tela_inicial.*
+import kotlinx.android.synthetic.main.login.*
 import kotlinx.android.synthetic.main.toolbar.*
 
-class TelaInicialActivity : DebugActivity() {
+class TelaInicialActivity : NavigationDrawerActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_inicial)
@@ -20,34 +25,34 @@ class TelaInicialActivity : DebugActivity() {
 
         Toast.makeText(this, usuario, Toast.LENGTH_LONG).show()
 
-        setSupportActionBar(toolbar)
 
-        supportActionBar?.title = "Sua conta"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        ConfiguraMenuLateral()
 
-        button_pedidos.setOnClickListener {
+        button_nvpedido.setOnClickListener {
             val intent = Intent(this, PedidosActivity::class.java)
             startActivity(intent)
 
         }
 
-        button_pagamento.setOnClickListener {
-            val intent = Intent(this, PagamentoActivity::class.java)
+        button_novidades.setOnClickListener {
+            val intent = Intent(this, NovidadesActivity::class.java)
             startActivity(intent)
         }
 
-        button_desejos.setOnClickListener {
+        button_nvdesejo.setOnClickListener {
             val intent = Intent(this, DesejosActivity::class.java)
             startActivity(intent)
         }
 
         }
-        override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
             menuInflater.inflate(R.menu.menu_main, menu)
             return true
         }
 
-        override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
             val id = item.itemId
 
             if (id == R.id.action_buscar) {

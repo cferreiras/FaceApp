@@ -13,9 +13,11 @@
     <string name="action_config">Configurações</string>
     <string name="action_sair">Sair</string>
     <string name="tela_inicial_text">Informações</string>
-    <string name="button_pedidos">Meus Pedidos</string>
-    <string name="button_pagamentos">Meus pagamentos</string>
-    <string name="button_desejos">Lista de desejos</string>
+    <string name="button_nvpedido">Novo Pedido</string>
+    <string name="button_novidades">Novidades</string>
+    <string name="button_nvdesejo">Novo Desejo</string>
+    <string name="drawer_open">Aberto</string>
+    <string name="drawer_close">Fechado</string>
 
 
 </resources>
